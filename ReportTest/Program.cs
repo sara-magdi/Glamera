@@ -42,5 +42,6 @@ app.MapBranchEndpoints();
 app.MapTransactionEndpoints();
 
 app.MapServiceEndpoints();
+app.MapRevenueEndpoints();
 
 app.Run();

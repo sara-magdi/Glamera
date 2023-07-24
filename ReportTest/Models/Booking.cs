@@ -27,6 +27,14 @@ namespace ReportTest.Models
         public DateOnly BookingDate { get; set; }
         public TimeOnly BookingTime { get; set; }
         public string Status { get; set; }
+
+        public virtual ICollection<Transaction> Transactions { get; set; }
+
+
+        public Booking()
+        {
+                Transactions = new HashSet<Transaction>();
+        }
     }
 
 
